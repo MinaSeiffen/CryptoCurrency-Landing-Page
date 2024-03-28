@@ -1,0 +1,36 @@
+.about{
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    .textContainer {
+        flex: 1;
+        color: gray;
+
+        p{
+            font-size: 32px;
+            line-height: 42px;
+        }   
+    }
+    .container{
+        flex: 1;
+        h1{
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        h2{
+            font-size: 26px;
+        }
+
+        p{
+            font-size: 22px;
+            font-weight: bold;
+            padding-top: 10px;
+            
+        }
+    }
+}

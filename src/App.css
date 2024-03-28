@@ -1,0 +1,15 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+body {
+  background: linear-gradient(135deg, rgba(16,6,52,1) 0%, rgba(15,5,29,1) 25%, rgba(15,5,29,1) 75%, rgba(16,6,52,1) 100%);  
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
