@@ -35,11 +35,11 @@ const About = () => {
 
   return (
     <div className="h-[80vh]">
-      <div className="flex justify-center flex-col items-center pt-12 pb-8">
-        <h1 className="font-bold text-5xl">
+      <div className="flex flex-col items-center justify-center pt-12 pb-8">
+        <h1 className="text-5xl font-bold">
           About <span>us</span>
         </h1>
-        <p className="font-bold text-lg py-4">
+        <p className="py-4 text-lg font-bold">
           A COMMERCIAL WEBSITE THAT LISTS WALLETS, EXCHANGES AND OTHER BITCOIN RELATED INFO
         </p>
       </div>
@@ -52,11 +52,11 @@ const About = () => {
             A place for everyone who wants to simply buy and sell Bitcoins. Deposit funds using your Visa/MasterCard or bank transfer. Instant buy/sell of Bitcoins at fair price is guaranteed. Nothing extra. Join over 700,000 users from all over the world satisfied with our services.
           </motion.h2>
           <motion.p variants={variants} initial="initial" whileInView="animate">
-            <span className="gap-x-3 cursor-pointer active:text-gray-600 underline" onClick={(e) => handleMission(e)}>
+            <span className="underline cursor-pointer gap-x-3 active:text-gray-600" onClick={(e) => handleMission(e)}>
               Our Mission
             </span>{" "}
             <span>|</span>{" "}
-            <span className="gap-x-3 cursor-pointer active:text-gray-600 underline" onClick={(e) => handleAdvantages(e)}>
+            <span className="underline cursor-pointer gap-x-3 active:text-gray-600" onClick={(e) => handleAdvantages(e)}>
               Our Advantages
             </span>{" "}
           </motion.p>
