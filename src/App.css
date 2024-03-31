@@ -5,11 +5,23 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, rgba(16,6,52,1) 0%, rgba(15,5,29,1) 25%, rgba(15,5,29,1) 75%, rgba(16,6,52,1) 100%);  
   color: lightgray;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.course {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .box {
+      width: 200px;
+      height: 200px;
+      background-color: #0648c2;
+  }
 }

@@ -8,11 +8,17 @@
 
     .textContainer {
         flex: 1;
-        color: gray;
+        color: #262626;
+        font-size: 30px;
 
         p{
-            font-size: 32px;
-            line-height: 42px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            line-height: 28px;
+            padding-right: 30px;
+            padding-left: 92px;
+            font-weight: 200;
+            color: #646464;
         }   
     }
     .container{
