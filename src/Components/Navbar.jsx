@@ -3,7 +3,7 @@ const Navbar = () => {
 
   return (
     <div className="flex flex-wrap w-full place-items-center z-50 max-w-[1950px]">
-      <section className="fixed mt-20 mx-auto w-full">
+      <section className="fixed mt-20 mx-auto w-full max-sm:relative max-sm:mt-0">
         {/* navbar */}
         <nav className="flex justify-between text-white bg-gray-700 max-w-[1950px]">
           <div className="px-5 xl:px-12 py-6 flex mx-auto items-center container ">

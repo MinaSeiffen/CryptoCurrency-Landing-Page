@@ -14,8 +14,12 @@ const App = () => {
       <div className="bg-gray-600 w-full">
         <Navbar />
         <Hero />
+        <div>
         <About />
+        </div>
+        <div>
         <Works />
+        </div>
         <div>
           <Footer />
         </div>

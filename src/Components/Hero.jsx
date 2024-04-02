@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <motion.div
-      className="mt-10 sm:mt-20 hero bg-gray-600" // Adjusted top margin for smaller screens
+      className="mt-10 sm:mt-20  hero bg-gray-600" // Adjusted top margin for smaller screens
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="container grid h-[800px] items-center justify-center grid-cols-1 px-4 mx-auto my-16 sm:grid-cols-2"> {/* Adjusted grid columns for smaller screens */}
+      <div className="container grid h-[900px] items-center justify-center grid-cols-1 px-4 mx-auto my-16 lg:grid-cols-2"> {/* Adjusted grid columns for smaller screens */}
         {/* left side */}
         <motion.div
           className="p-4 mt-5 text-xl text-center sm:mt-10 sm:text-left sm:text-3xl left" // Adjusted text alignment and size for smaller screens
@@ -26,36 +26,35 @@ export default function Hero() {
 
         {/* right side */}
         <motion.div
-          className="p-4 right"
+          className="p-4 right lg:flex-col"
           initial={{ y: 100, opacity: 0 }} // Adjusted initial animation for smaller screens
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           whileHover={{
             scale: 1.1,
-            // rotate: [0, -2, 2, -2, 2, 0],
             transition: { duration: 1 },
           }}
           whileTap={{ scale: 0.9 }}
         >
-          <div className="img-container">
+          <div className="img-container lg:flex-col lg:justify-center lg:items-center">
             <motion.img
               src="./currency.png"
               alt="crypto"
-              className="max-w-[350px] mx-[350px] mb-[50px] sm:max-w-200" // Adjusted max width for smaller screens
+              className="max-w-[350px] mx-[350px] mb-[50px] max-xl:mx-24 max-lg:mx-auto max-sm:mx-auto max-md:mb-3 max-sm:max-w-[300px]" // Adjusted max width for smaller screens
               whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
               whileTap={{ scale: 0.9 }}
             />
             <motion.img
               src="./trade.png"
               alt="crypto"
-              className="max-w-[300px] mx-[150px] mb-[50px]  sm:max-w-200" // Adjusted max width for smaller screens
+              className="max-w-[300px] mx-[150px] mb-[50px] max-xl:mx-24 max-lg:mx-auto max-sm:mx-auto max-md:mb-3 sm:max-w-200" // Adjusted max width for smaller screens
               whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
               whileTap={{ scale: 0.9 }}
             />
             <motion.img
               src="./chart.png"
               alt="crypto"
-              className="max-w-[300px] mx-[300px] sm:max-w-200" // Adjusted max width for smaller screens
+              className="max-w-[300px] mx-[300px] max-xl:mx-24 max-lg:mx-auto max-sm:mx-auto max-md:mb-3 sm:max-w-200 " // Adjusted max width for smaller screens
               whileHover={{ scale: 1.2, transition: { duration: 0.5 } }}
               whileTap={{ scale: 0.9 }}
             />
@@ -64,9 +63,9 @@ export default function Hero() {
       </div>
 
       <div className="flex items-center justify-center">
-        <hr className="w-3/4 mb-20 sm:w-3/4 sm:mb-40" /> {/* Adjusted margin for smaller screens */}
+        <hr className="w-3/4 mb-20 sm:w-3/4 max-sm:mb-12 max-sm:mt-2 max-md:mt-48 max-lg:mt-52" /> {/* Adjusted margin for smaller screens */}
       </div>
-      <div className="container grid items-center justify-center grid-cols-1 px-4 mx-auto mb-16 sm:grid-cols-2"> {/* Adjusted grid columns for smaller screens */}
+      <div className="container grid items-center justify-center max-lg:grid-cols-1 px-4 mx-auto mb-16 grid-cols-2 "> {/* Adjusted grid columns for smaller screens */}
         <motion.div
           className="p-4 left i"
           initial={{ y: -100, opacity: 0 }}

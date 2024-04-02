@@ -15,28 +15,13 @@
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
             line-height: 28px;
-            padding-right: 30px;
-            padding-left: 92px;
+            // padding-right: 30px;
+            // padding-left: 92px;
             font-weight: 200;
             color: #646464;
         }   
     }
     .container{
         flex: 1;
-        h1{
-            font-size: 36px;
-            font-weight: bold;
-        }
-
-        h2{
-            font-size: 26px;
-        }
-
-        p{
-            font-size: 22px;
-            font-weight: bold;
-            padding-top: 10px;
-            
-        }
     }
 }
